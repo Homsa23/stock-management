@@ -3,8 +3,8 @@
 #include <string.h>
 
 typedef struct box {
-    char reference[100];
-    char name[100];
+    char reference[20];
+    char name[20];
     int qantity;
     int selling_price;
     int purchase_price;
@@ -183,7 +183,7 @@ int main() {
     const char *filename = "stock.txt";
     int choice;
     box *head = loadFromFile(filename); // Load stock at the start
-    char reference[100], name[100];
+    char reference[20], name[20];
 
     while (1) {
         printf("---<stock management>---\n");
